@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<%- include("./partials/head.ejs")%>
+<body>
+   
+
+<%-include("./partials/nav.ejs") %>
+
+
+
+
+<div class="blogs-content">
+<h1>All bolgs</h1>
+   
+<% if(blogs.length>0){%>
+      
+  <% for(i=0;i<blogs.length;i++){ %>
+    <div class="OneSingleBlog">
+      <h3 class="title"><%= blogs[i].title%></h3>
+      <p class="body"><%= blogs[i].snippet%></p>
+    </div>
+  <%}%>
+
+ <%}%>
+ </div>
+</div>
+
+<div class="flow"></div>
+
+
+<script src="app.js"></script>
+</body>
+</html>

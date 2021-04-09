@@ -1,0 +1,3 @@
+hey there node js ....
+fs mosule is reading me..
+thats awsome.:)
